@@ -145,7 +145,7 @@ function load_cart(){
 
       total += cart[i].price
     }
-    total = Math.round(total * 100) / 10
+    total = Math.round(total * 100) / 100
     localStorage.setItem('total_price', total);
     document.getElementById('total').innerHTML = "BDT"+localStorage.getItem("total_price")
     if(!cart.length)
